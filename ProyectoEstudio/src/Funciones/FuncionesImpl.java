@@ -231,6 +231,7 @@ public class FuncionesImpl {
 				
 				while((cadena = fi.read(buffer)) > 0){
 					fo.write(buffer, 0, cadena);
+					cadena = fi.read(buffer);
 				}
 				fi.close();
 				fo.close();
